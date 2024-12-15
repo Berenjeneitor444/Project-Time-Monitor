@@ -11,7 +11,6 @@ public class Project {
     private String projectName;
     private LocalDateTime startDate;
     private LocalDateTime finishDate;
-    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     private boolean isRunning;
     private long milisegundos = 0;
 
