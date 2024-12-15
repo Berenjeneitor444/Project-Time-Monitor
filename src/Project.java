@@ -14,6 +14,7 @@ public class Project {
     private LocalDateTime finishDate;
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     private boolean isRunning;
+    private long milisegundos = 0;
 
     // Getters and Setters
 
@@ -35,7 +36,9 @@ public class Project {
     public LocalDateTime getStartDate() {
         return startDate;
     }
-
+    public void setStartDate(LocalDateTime startDate) {
+        this.startDate = startDate;
+    }
     public String getProjectName() {
         return projectName;
     }
@@ -44,13 +47,22 @@ public class Project {
         this.projectName = projectName;
     }
 
+    public long getMilisegundos() {
+        return milisegundos;
+    }
+
+    public void setMilisegundos(long milisegundos) {
+        this.milisegundos = milisegundos;
+    }
+
     // Constructor
     public Project(String Name){
         projectName = Name;
-        startDate = LocalDateTime.now();
+        startDate = null;
         finishDate = null;
         isRunning = false;
     }
+
 
 
 }
