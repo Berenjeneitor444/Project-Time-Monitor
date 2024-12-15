@@ -1,5 +1,4 @@
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 /**
  * clase que representa un projecto del cual se registrarán tiempos
